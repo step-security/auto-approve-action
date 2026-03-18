@@ -33679,7 +33679,7 @@ function validateSubscription() {
             const payload = JSON.parse((0, fs_1.readFileSync)(eventPath, "utf8"));
             repoPrivate = (_a = payload === null || payload === void 0 ? void 0 : payload.repository) === null || _a === void 0 ? void 0 : _a.private;
         }
-        const upstream = "depot/setup-action";
+        const upstream = "hmarr/auto-approve-action";
         const action = process.env.GITHUB_ACTION_REPOSITORY;
         const docsUrl = "https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions";
         core.info("");

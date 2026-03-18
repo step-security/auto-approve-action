@@ -12,7 +12,7 @@ async function validateSubscription() {
     repoPrivate = payload?.repository?.private;
   }
 
-  const upstream = "depot/setup-action";
+  const upstream = "hmarr/auto-approve-action";
   const action = process.env.GITHUB_ACTION_REPOSITORY;
   const docsUrl =
     "https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions";
