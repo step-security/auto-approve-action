@@ -8,8 +8,6 @@
 
 Automatically approve GitHub pull requests.
 
-**Important:** use v4 or later, as earlier versions use deprecated versions of node. If you're on an old version of GHES (with an old version of the node interpreter) you may need to use an easier version until you can upgrade.
-
 ## Usage instructions
 
 Create a workflow file (e.g. `.github/workflows/auto-approve.yml`) that contains a step that `uses: step-security/auto-approve-action@v4`. Here's an example workflow file:
@@ -121,7 +119,3 @@ GitHub lets you prevent merges of unapproved pull requests. However, it's occasi
 ## Code owners
 
 If you're using a [CODEOWNERS file](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners), you'll need to give this action a personal access token for a user listed as a code owner. Rather than using a real user's personal access token, you're probably better off creating a dedicated bot user, and adding it to a team which you assign as the code owner. That way you can restrict the bot user's permissions as much as possible, and your workflow won't break when people leave the team.
-
-## Development and release process
-
-Each major version corresponds to a branch (e.g. `v3`, `v4`). The latest major version (`v4` at the time of writing) is the repository's default branch. Releases are tagged with semver-style version numbers (e.g. `v1.2.3`).
